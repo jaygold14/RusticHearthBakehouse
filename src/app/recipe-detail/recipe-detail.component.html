@@ -1,0 +1,12 @@
+<div *ngIf="recipe">
+
+    <h2>{{ recipe.name }} Details</h2>
+    <!-- <div><span>id: </span>{{recipe.id}}</div> -->
+    <div>
+      <label for="recipe-name">Recipe name: </label>
+      <input id="recipe-name" [(ngModel)]="recipe.name" placeholder="name">
+    </div>
+    
+    <button type="button" (click)="goBack()">Back</button>
+    <button type="button" (click)="save()">Save</button>
+  </div>
